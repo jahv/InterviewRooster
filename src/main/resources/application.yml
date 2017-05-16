@@ -1,0 +1,18 @@
+info:
+  app:
+    name: @project.name@
+    description: @project.description@
+    version: @project.version@
+
+logging:
+  file: log/interview-rooster.log
+  level:
+    org.springframework: INFO
+    com.nearsoft: DEBUG
+  #config: set path to find the file
+
+endpoints:
+  logfile:
+    sensitive: true
+  shutdown:
+    enabled: true
